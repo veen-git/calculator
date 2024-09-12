@@ -1,0 +1,101 @@
+button{
+    font-size: large;
+}
+
+h2{
+text-align: center;
+}
+
+#result{
+font-size: 50px;
+margin: 5px;
+height: 20%;
+background-color: azure;
+display: flex;
+text-align: right;
+}
+
+#container {
+border: 10px solid;
+background-color: lightgray;
+box-sizing: border-box;
+padding: 30px;
+height: 800px;
+width: 800px;
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+
+.calc-buttons{
+    display: flex;
+    flex: 1;   
+}
+
+#left{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    margin: 5px;
+}
+
+#right{
+    width: 30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    margin: 5px;
+    justify-content: space-evenly;  
+}
+
+.top{
+    display: flex;
+    width: 100%;
+    height:10%;
+    justify-content: space-evenly;
+}
+
+.middle{
+    height: 80%;
+    width: 100%;
+    display: flex;    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.middle-btn{
+    height: 33%;
+    width: 33%;
+    flex: 1,1,1;
+}
+
+.top-btn{
+    height: 100%;
+    width: 33%;
+    flex: 1,1,1;
+}
+
+.bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#zero-btn.middle-btn{
+   width: 66%;
+   height: 100%;
+}
+
+.opr-btn{
+    height: 20%;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#eql-btn{
+   flex:1;
+}
