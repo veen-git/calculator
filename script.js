@@ -70,12 +70,14 @@ nmbrBtns.forEach(btn => {
 const oprBtns = document.querySelectorAll(".opr-btn");
 oprBtns.forEach(btn => {
     btn.addEventListener("click",() => {
-        if (num1 != " " && num2 != " "){
+        if (num1 != " ") {
+            if (num2 != " "){
             operate();
         }
             display.value = num1;
             operator = btn.textContent;
             num2 = " ";
+    }
     })
         
 })
