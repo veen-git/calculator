@@ -99,3 +99,9 @@ flex-direction: column;
 #eql-btn{
    flex:1;
 }
+
+#dot-btn{
+    width: 33%;
+    height: 100%;
+    font-size: 30px;
+}
