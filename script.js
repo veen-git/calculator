@@ -28,8 +28,8 @@ let num2 = " "
 
 function operate(){
     if(num1 != " " && operator !== null && num2 != " "){
-        const number1 = parseInt(num1);
-        const number2 = parseInt(num2);
+        const number1 = parseFloat(num1);
+        const number2 = parseFloat(num2);
 
         let value;
 
@@ -80,7 +80,6 @@ oprBtns.forEach(btn => {
         
 })
 
-
 document.querySelector("#eql-btn").addEventListener("click",() => {
     operate();
     num1 = " ";
@@ -94,3 +93,16 @@ document.querySelector(".top-btn").addEventListener("click",() => {
     operator = null;
     num2 = " ";
 })
+
+document.querySelector("#dot-btn").addEventListener("click",() => {
+    if (num1 != " ") {
+        if (num2 != " ") {
+            num2 = toFloat(num2)
+        }
+        num1 = toFloat(num1) 
+    }
+})
+
+function toFloat(num){
+    return num + "."    
+}
